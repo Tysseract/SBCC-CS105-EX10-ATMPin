@@ -88,7 +88,7 @@ public class AtmPinTester {
 	@Test
 	public void testTwoAttempsCorrect() {
 		runTest("1337 1234");
-		test("Should not accept 1234.", "Enter your PIN:\\s*Your PIN is incor­rect. Re-enter your PIN:\\s*Your PIN is correct.\\s*");
+		test("Should not accept 1234.", "Enter your PIN:\\s*Your PIN is incorrect. Re-enter your PIN:\\s*Your PIN is correct.\\s*");
 
 		totalScore += 2;
 	}
@@ -96,7 +96,7 @@ public class AtmPinTester {
 	@Test
 	public void testThreeAttemptsIncorrect() {
 		runTest("1337 1337 1337");
-		test("Should not accept 1234.", "Enter your PIN:\\s*Your PIN is incor­rect. Re-enter your PIN:\\s*Your PIN is incor­rect. Re-enter your PIN:\\s*Your PIN is incor­rect. Your account is locked.\\s*");
+		test("Should not accept 1234.", "Enter your PIN:\\s*Your PIN is incorrect. Re-enter your PIN:\\s*Your PIN is incorrect. Re-enter your PIN:\\s*Your PIN is incorrect. Your account is locked.\\s*");
 
 		totalScore += 2;
 	}
@@ -104,7 +104,7 @@ public class AtmPinTester {
 	@Test
 	public void testThreeAttemptsCorrect() {
 		runTest("1337 1337 1234");
-		test("Should not accept 1234.", "Enter your PIN:\\s*Your PIN is incor­rect. Re-enter your PIN:\\s*Your PIN is incor­rect. Re-enter your PIN:\\s*Your PIN is correct.\\s*");
+		test("Should not accept 1234.", "Enter your PIN:\\s*Your PIN is incorrect. Re-enter your PIN:\\s*Your PIN is incorrect. Re-enter your PIN:\\s*Your PIN is correct.\\s*");
 
 		totalScore += 2;
 	}
