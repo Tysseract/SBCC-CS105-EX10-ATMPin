@@ -33,7 +33,7 @@ public class AtmPinTester {
 
 	@Test
 	public void testOneAttemptCorrect() {
-		AtmPin.PinValidationResult result = AtmPin.validatePin("1234", 1);
+		AtmPin.PinValidationResult result = AtmPin.validatePin("1234", 0);
 		assertTrue("Should accept 1234.", result == AtmPin.PinValidationResult.UNLOCKED_PIN_CORRECT);
 
 		totalScore += 2;
@@ -41,7 +41,7 @@ public class AtmPinTester {
 
 	@Test
 	public void testTwoAttempsCorrect() {
-		AtmPin.PinValidationResult result = AtmPin.validatePin("1337", 2);
+		AtmPin.PinValidationResult result = AtmPin.validatePin("1337", 1);
 		assertTrue("Should not accept 1234.", result == AtmPin.PinValidationResult.UNLOCKED_PIN_INCORRECT);
 
 		totalScore += 2;
@@ -49,7 +49,7 @@ public class AtmPinTester {
 
 	@Test
 	public void testThreeAttemptsIncorrect() {
-		AtmPin.PinValidationResult result = AtmPin.validatePin("1337", 3);
+		AtmPin.PinValidationResult result = AtmPin.validatePin("1337", 2);
 		assertTrue("Should not accept 1234.", result == AtmPin.PinValidationResult.LOCKED);
 
 		totalScore += 2;
@@ -57,7 +57,7 @@ public class AtmPinTester {
 
 	@Test
 	public void testThreeAttemptsCorrect() {
-		AtmPin.PinValidationResult result = AtmPin.validatePin("1234", 3);
+		AtmPin.PinValidationResult result = AtmPin.validatePin("1234", 2);
 		assertTrue("Should accept not 1234.", result == AtmPin.PinValidationResult.UNLOCKED_PIN_CORRECT);
 
 		totalScore += 2;
