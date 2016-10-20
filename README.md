@@ -10,19 +10,27 @@ The detailed description of this problem comes from the Programming Exercise P5.
 
 You are writing a small section of an ATM machine where you accept a string that is a password and accept it or reject it. If the user tries more than three times with a bad password the card is blocked. The password must be fixed at "1234". Security is a priority!
 
-Your Main.java should contain code to test your AtmPin solution. Be sure to test the cases where you 1, 2 and 3 attempts are made.
+Your AtmPin.java should contain code to test your AtmPin solution. Be sure to test the cases where you 1, 2 and 3 attempts are made.
 
 ### Getting Started
 
-Like our last exercise, we are going to do this exercise by writing the source code that solves the problem first in **Main.java**. Using the techniques shown on the web page titled [How to Start Every Project in this Class](https://github.com/sbcc-cs105-spring2016/HowToStartEveryProject) create a source file called **Main.java**. This is where your code will go. 
+Like our last exercise, we are going to do this exercise by writing the source code that solves the problem first in **AtmPin.java**. Using the techniques shown on the web page titled [How to Start Every Project in this Class](https://github.com/sbcc-cs105-spring2016/HowToStartEveryProject) create a source file called **AtmPin.java**. This is where your code will go. It should have a main function and a function `public static PinValidationResult validatePin(String pin, int incorrectCount)`. It takes two parameters, a String containing the PIN the user entered and the number of times the PIN has been entered incorrectly. The function returns an enumeration that indicates the result of the validation process. It looks like the following:
+
+```java
+public enum PinValidationResult {
+    UNLOCKED_PIN_CORRECT,
+    UNLOCKED_PIN_INCORRECT,
+    LOCKED
+}
+```
 
 Starting this week we don't have any code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation
 
-Now go through Main.java, add the proper headers as in past assighments and then change the [CHANGE THIS TO YOUR INFORMATION] text to the proper items. There are two items to be changed.
+Now go through AtmPin.java, add the proper headers as in past assignments and then change the [CHANGE THIS TO YOUR INFORMATION] text to the proper items. There are two items to be changed.
 
-Once you've written your code run the code by single clicking on **Main.java** in the package explorer and selecting **Run->Run** from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?
+Once you've written your code run the code by single clicking on **AtmPin.java** in the package explorer and selecting **Run->Run** from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?
 
-###Running the Unit Tests
+### Running the Unit Tests
 
 Next you'll want to run these unit tests. Start by right-clicking on the `unittest.cs105` package and selecting **Run As -> JUnit Test**. 
 
@@ -34,12 +42,8 @@ The first step of turning in your code is to commit and push your code to GitHub
 
 To start the process write click your project and select **Team -> Commit...** and follow the usual procedures.
 
-####Completing the turn-in process
+#### Completing the turn-in process
 
-Now to complete the turn-in process, once you confirmed that your code is on GitHub, you need to create a **pull request** against the class GitHub repository. This action will indicate to the original project that you have finished your coding and it will create a place to give feedback on a line by line basis. 
+Now to complete the turn-in process, once you confirmed that your code is on BitBucket, you need to create a **build plan** on Bamboo. This action will create a Bamboo build plan that will build and test your code every time you push code to your project. You can also run builds manually
 
-Go to **your** repository for this assignment on GitHub and click on the **Pull Request** icon.
- 
-1\. Click on **New pull request**
-
-2\. Click on **Create pull request**
+Follow the directions in [How to Turn in Every Project in This Class](http://crowd.cs.sbcc.edu:7990/projects/CS105F2016/repos/allan.knight/browse/HowToTurnInEveryProjectInThisClass.md)
