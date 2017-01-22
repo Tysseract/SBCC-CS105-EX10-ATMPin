@@ -10,7 +10,7 @@ The detailed description of this problem comes from the Programming Exercise P3.
 
 You are writing a small section of an ATM machine where you accept a string that is a password and accept it or reject it. If the user tries more than three times with a bad password the card is blocked. The password must be fixed at "1234". Security is a priority!
 
-Your **AtmPin*.java should contain code to test your AtmPin solution. You need to implement a method, `validatePin` that takes a string, representing the pin code, and an integer, which indicates which how many attempts the user has already made. Be sure to test the cases where you 1, 2 and 3 attempts have been made.
+Your **AtmPin.java** should contain code to test your AtmPin solution. You need to implement a method, `validatePin` that takes a string, representing the pin code, and an integer, which indicates which how many attempts the user has already made. Be sure to test the cases where you 1, 2 and 3 attempts have been made.
 
 ### Getting Started
 
