@@ -6,11 +6,11 @@ The purpose of this assignment is to learn how to do intermediate comparisons as
 
 ### Problem Description
 
-The detailed description of this problem comes from the Programming Exercise P5.9 that is in the book (pages 233 & 234).
+The detailed description of this problem comes from the Programming Exercise P3.32 that is in the book (pages 131, of the _Late Objects_ version).
 
 You are writing a small section of an ATM machine where you accept a string that is a password and accept it or reject it. If the user tries more than three times with a bad password the card is blocked. The password must be fixed at "1234". Security is a priority!
 
-Your AtmPin.java should contain code to test your AtmPin solution. Be sure to test the cases where you 1, 2 and 3 attempts are made.
+Your **AtmPin*.java should contain code to test your AtmPin solution. You need to implement a method, `validatePin` that takes a string, representing the pin code, and an integer, which indicates which how many attempts the user has already made. Be sure to test the cases where you 1, 2 and 3 attempts have been made.
 
 ### Getting Started
 
@@ -44,6 +44,32 @@ To start the process write click your project and select **Team -> Commit...** a
 
 #### Completing the turn-in process
 
-Now to complete the turn-in process, once you confirmed that your code is on BitBucket, you need to create a **build plan** on Bamboo. This action will create a Bamboo build plan that will build and test your code every time you push code to your project. You can also run builds manually
+Go to **your** repository or the repository for this assignment on BitBucket (the project you forked from to create your project).
 
-Follow the directions in [How to Turn in Every Project in This Class](http://crowd.cs.sbcc.edu:7990/projects/CS105F2016/repos/allan.knight/browse/HowToTurnInEveryProjectInThisClass.md)
+<img src="https://dl.dropboxusercontent.com/u/7698973/cs105/EX01-HelloWorld/create-pull-request.png" width="207" height="207" />
+
+1\. Click on the **Create pull request** icon. 
+
+You should see something similar to this picture:
+
+<img src="https://dl.dropboxusercontent.com/u/7698973/cs105/EX01-HelloWorld/pull-request-screen-first.png" width="600" height="250" />
+
+The next screen then shows the source and destination of the pull request. Your code is the source and is listed at the top. The destination is the original project that you forked from. The only thing to do on this screen is to select the **master** branch for your project. Once you select **Select Branch**, as directed below, you should see the following:
+
+<img src="https://dl.dropboxusercontent.com/u/7698973/cs105/EX01-HelloWorld/pull-request-master.png" width="600" height="250" />
+
+2\. Select **Select Branch**
+
+3\. Select **master** 
+
+4\. Press the **Continue** button.
+
+Once you've followed these steps you should see this at the top:
+
+<img src="https://dl.dropboxusercontent.com/u/7698973/cs105/EX01-HelloWorld/pull-request-description.png" width="514" height="325" />
+
+5\. Under **Title**.
+
+6\. Under **Description**.
+
+7\. Finally, click on **Create**
