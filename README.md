@@ -14,7 +14,7 @@ Your **AtmPin.java** should contain code to test your AtmPin solution. You need 
 
 ### Getting Started
 
-Like our last exercise, we are going to do this exercise by writing the source code that solves the problem first in **AtmPin.java**. Using the techniques shown on the web page titled [How to Start Every Project in this Class](https://github.com/sbcc-cs105-spring2016/HowToStartEveryProject) create a source file called **AtmPin.java**. This is where your code will go. It should have a main function and a function `public static PinValidationResult validatePin(String pin, int incorrectCount)`. It takes two parameters, a String containing the PIN the user entered and the number of times the PIN has been entered incorrectly. The function returns an enumeration that indicates the result of the validation process. It looks like the following:
+Like our last exercise, we are going to do this exercise by writing the source code that solves the problem first in **AtmPin.java**. Using the techniques shown on the web page titled [How to Start Every Project in this Class](http://209.129.49.15:7990/projects/CS105F2016/repos/allan.knight/browse/HowToStartEveryProject.md) create a source file called **AtmPin.java**. This is where your code will go. It should have a main function and a function `public static PinValidationResult validatePin(String pin, int incorrectCount)`. It takes two parameters, a String containing the PIN the user entered and the number of times the PIN has been entered incorrectly. The function returns an enumeration that indicates the result of the validation process. It looks like the following:
 
 ```java
 public enum PinValidationResult {
